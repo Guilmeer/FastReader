@@ -1,0 +1,30 @@
+[33mcommit 79b897920f4b79e47d473c45958c24940c50bcc0[m[33m ([m[1;36mHEAD -> [m[1;32mthirdBranch[m[33m, [m[1;31mFastReader/main[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 0e4f6f9 0dc283f
+Author: Guilmeer <guicobata@gmail.com>
+Date:   Sat Jul 10 00:57:16 2021 -0300
+
+    Merge branch 'main' of https://github.com/Guilmeer/FastReader
+
+[33mcommit 0e4f6f9b57a454a6b2616d7ae757098410219e43[m
+Author: Guilmeer <guicobata@gmail.com>
+Date:   Sat Jul 10 00:55:12 2021 -0300
+
+    Small Update
+
+[33mcommit 0dc283f4471f0afb367500a8b6eb9b06eae22074[m
+Author: Guilherme Coelho <61201488+Guilmeer@users.noreply.github.com>
+Date:   Tue Jun 15 18:40:31 2021 -0300
+
+    ReadMe Update
+
+[33mcommit 24203b3fef228f04a8c9daf193400c831f15e1ca[m
+Author: Guilmeer <guicobata@gmail.com>
+Date:   Tue Jun 15 18:02:50 2021 -0300
+
+    First Commit
+
+[33mcommit f5ae4b7a8fe6c3b90e22f9987c0e78c5fd82d967[m
+Author: Guilherme Coelho <61201488+Guilmeer@users.noreply.github.com>
+Date:   Tue Jun 15 18:07:50 2021 -0300
+
+    Initial commit
