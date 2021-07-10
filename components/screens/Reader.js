@@ -1,20 +1,46 @@
 import React, { useState } from "react";
 import { styles, PurpleContainer } from "../../styles";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
-export function Reader(props) {
-  const params = props.route.params;
+export class Reader extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  params = this.props.route.params;
 
-  return (
-    <>
-      <PurpleContainer>
-        {params.header}
-        <View style={{ alignItems: "center", justifyContent: "center" }}>
-          <TouchableOpacity style={styles.roundButton}>
-            <Text>{params.item}</Text>
-          </TouchableOpacity>
-        </View>
-      </PurpleContainer>
-    </>
-  );
+  state = {
+    onPlay: false,
+  };
+
+  toPlay = () => {
+    this.setState({ onPlay: !this.state.onPlay });
+    console.log(this.state.onPlay);
+  };
+
+  render() {
+    return (
+      <>
+        <PurpleContainer>
+          {this.params.header}
+          <View>
+            <TextInput />
+            <Text>{this.state.onPlay ? this.params.item : "not"}</Text>
+            <TouchableOpacity
+              style={[
+                styles.roundPlayButton,
+                !this.state.onPlay ? { opacity: 1 } : { opacity: 0.3 },
+              ]}
+              onPress={() => {
+                this.toPlay();
+              }}
+            >
+              <Text style={[styles.appButtonText]}>
+                {!this.state.onPlay ? "Play" : "Pause"}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </PurpleContainer>
+      </>
+    );
+  }
 }

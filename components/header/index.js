@@ -1,11 +1,18 @@
 import React from "react";
-import { Container, styles } from "./styles";
-import { Text } from "react-native";
+import { styles } from "./styles";
+import { Text, View, Dimensions } from "react-native";
+const screenHeight = Dimensions.get("window").height;
+const screenWidth = Dimensions.get("window").width;
 
-export default function Header() {
+export default function Header({ items }) {
   return (
-    <Container>
-      <Text style={styles.titleText}>{"Fast Reader"}</Text>
-    </Container>
+    <View style={styles.headerContainer}>
+      <Text
+        style={[styles.headerTitleText, { top: screenHeight * 0.02, flex: 4 }]}
+      >
+        {"Fast Reader"}
+      </Text>
+      {items}
+    </View>
   );
 }

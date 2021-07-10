@@ -1,14 +1,20 @@
-import { StyleSheet } from "react-native";
-import styled from "styled-components/native";
+import { StyleSheet, Dimensions } from "react-native";
 
-export const Container = styled.View`
-  align-items: center;
-  padding: 40px 0 30px;
-`;
+const screenHeight = Dimensions.get("window").height;
+const screenWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
-  titleText: {
-    fontSize: 35,
+  headerContainer: {
+    backgroundColor: "black",
+    height: screenHeight * 0.13,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    elevation: 10,
+  },
+  headerTitleText: {
+    fontSize: 25,
+    padding: 15,
     fontWeight: "bold",
     color: "white",
   },
